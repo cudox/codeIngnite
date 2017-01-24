@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://w8sici009:7101/ConsultarMorasService-ConsultaMorasService-webapp/ConsultarMorasModelBeanService/#%7Bhttp%3A%2F%2Fmodelopersistencia.sesion.consultarmoras.bancodebogota.com%2F%7DConsultarMorasModelBeanService?wsdl"
+          uri="../com/bancodebogota/consultarmoras/ConsultarMorasModelBeanService.wsdl"/>
+</catalog>

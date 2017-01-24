@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="1.0">
+  <persistence-unit name="Procedure">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/MDT/MntoCarteraConsolidadaDS</jta-data-source>
+    <properties>               
+      <property name="eclipselink.target-server" value="WebLogic_10"/>
+      <property name="eclipselink.target-database" value="Oracle"/>
+    </properties>
+  </persistence-unit>
+</persistence>

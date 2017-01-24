@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="ConsultarMorasModelBeanService.xml"/>
+      <url path="ConsultarMorasModelBeanService.wsdl"/>
+      <url path="ConsultarMorasModelBeanService_schema1.xsd"/>
+      <url path="types/RespuestaConsultaMoras.java"/>
+      <url path="Exception.java"/>
+      <url path="ConsultarMorasModelBeanService.java"/>
+      <url path="types/Exception.java"/>
+      <url path="ConsultarMorasModelBean.java"/>
+      <url path="types/ObjectFactory.java"/>
+      <url path="types/ConsultarMoras.java"/>
+      <url path="types/ConsultarMorasResponse.java"/>
+      <url path="ConsultarMorasModelBeanPortClient.java"/>
+      <url path="types/package-info.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="ConsultarMorasModelBeanService.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="com.bancodebogota.consultarmoras"/>
+            <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE" v="com.bancodebogota.consultarmoras.types"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_ENABLED"/>
+      <list n="PROXY_CLIENTS">
+         <url path="ConsultarMorasModelBeanPortClient.java"/>
+      </list>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" path="../../../../../ConsultaMorasService/src/META-INF/ConsultarMorasModelBeanService.wsdl"/>
+      <hash n="PROXY_PORTS">
+         <hash n="ConsultarMorasModelBeanPort">
+            <value n="ACCESSES_DOC_WRAPPPED" v="true"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="com.bancodebogota.consultarmoras.ConsultarMorasModelBean"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="ConsultarMorasModelBeanPort"/>
+            <hash n="OPERATIONS">
+               <hash n="consultarMoras">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_CLIENT_POLICY">
+                  <value n="addressing"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="http" host="w8sici009" port="7101" path="/ConsultarMorasService-ConsultaMorasService-webapp/ConsultarMorasModelBeanService"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="ConsultarMorasModelBeanService"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../../../ConsultarMorasProxy.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST">
+         <url path="ConsultarMorasModelBeanService_schema1.xsd"/>
+      </list>
+      <url n="PROXY_WSDL_URL" path="ConsultarMorasModelBeanService.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BOUND_PORT_TYPE" v="{http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/}ConsultarMorasModelBean"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/}ConsultarMorasModelBeanPortBinding"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="com.bancodebogota.consultarmoras.types.RespuestaConsultaMoras.consultarMoras.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES"/>
+         <value n="GUID" v="d4fd3fef-0158-1000-8d50-0a54409e41b8"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="ConsultarMorasModelBeanPort"/>
+               <value n="PORT_BINDING_NAME" v="{http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/}ConsultarMorasModelBeanPortBinding"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="com.bancodebogota.consultarmoras.types.RespuestaConsultaMoras.consultarMoras.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="http" host="w8sici009" port="7101" path="/ConsultarMorasService-ConsultaMorasService-webapp/ConsultarMorasModelBeanService"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+               <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="com.bancodebogota.consultarmoras"/>
+               <value n="WSDL2JAVA_ROOT_VALUE_PACKAGE" v="com.bancodebogota.consultarmoras.types"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/}ConsultarMorasModelBean"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="com.bancodebogota.consultarmoras.ConsultarMorasModelBeanImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="com.bancodebogota.consultarmoras.ConsultarMorasModelBean"/>
+               <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="com.bancodebogota.consultarmoras.ConsultarMorasModelBean"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../../../ConsultarMorasProxy.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/"/>
+         <value n="WS_URI" v="ConsultarMorasModelBeanService"/>
+         <url n="WS_WSDL_FILE" path="ConsultarMorasModelBeanService.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns2="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname localpart="ConsultarMorasModelBeanService"
+                     namespaceURI="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/"/>
+      <port-info>
+         <wsdl-port localpart="ConsultarMorasModelBeanPort"
+                    namespaceURI="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/"/>
+         <runtime/>
+         <operations>
+            <operation name="consultarMoras"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

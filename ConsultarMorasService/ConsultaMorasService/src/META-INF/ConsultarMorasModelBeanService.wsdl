@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions targetNamespace="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/" name="ConsultarMorasModelBeanService" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://modelopersistencia.sesion.consultarmoras.bancodebogota.com/" schemaLocation="ConsultarMorasModelBeanService_schema1.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="consultarMoras">
+    <part name="parameters" element="tns:consultarMoras"/>
+  </message>
+  <message name="consultarMorasResponse">
+    <part name="parameters" element="tns:consultarMorasResponse"/>
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception"/>
+  </message>
+  <portType name="ConsultarMorasModelBean">
+    <operation name="consultarMoras">
+      <input message="tns:consultarMoras"/>
+      <output message="tns:consultarMorasResponse"/>
+      <fault message="tns:Exception" name="Exception"/>
+    </operation>
+  </portType>
+  <binding name="ConsultarMorasModelBeanPortBinding" type="tns:ConsultarMorasModelBean">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="consultarMoras">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="ConsultarMorasModelBeanService">
+    <port name="ConsultarMorasModelBeanPort" binding="tns:ConsultarMorasModelBeanPortBinding">
+      <soap:address location="http://w8sici009:7101/ConsultarMorasService-ConsultaMorasService-webapp/ConsultarMorasModelBeanService"/>
+    </port>
+  </service>
+</definitions>
